@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms em HTML</title>
+</head>
+<body style="color: blueviolet;">
+    <header>
+        <h1>Exemplo de formulário no HTML</h1>
+    </header>
+    <article>
+        <form action="mailto:alexandernascimento@gmail.com" method="post" id="fContato" oninput="result.value=parseInt(Valor_01.value)+parseInt(Valor_02.value)">
+            <fieldset>
+            <label for="cNome">Nome</label><br>
+            <input type="text" size="50" name="tNome" id="cNome" required="required">
+            <br><br>
+            <p>Você mora</p>
+            <input type="radio" name="tipo" id="cid" value="C">
+            <label for="cid">Cidade</label><br>
+            <input type="radio" name="tipo" id="Inter" value="I">
+            <label for="Interior">Interior</label><br>
+        </fieldset>
+            <br><br>
+            <fieldset>
+            <p>Qual meio de transporte você usa?</p>
+            <input type="checkbox" id="transporte1" name="transporte1" value="Bike">
+            <label for="transporte1">Bicicleta</label><br>
+            <input type="checkbox" id="transporte2" name="transporte2" value="car">
+            <label for="transporte2">Carro</label><br>
+            <input type="checkbox" id="transporte3" name="transporte3" value="Metro">
+            <label for="transporte3">Metrô</label><br>
+            <input type="checkbox" id="transporte4" name="transporte4" value="Bus">
+            <label for="transporte4">Ônibus</label>
+        </fieldset>
+            <br><br>
+            <fieldset>
+            <label for="time">Selecione seu time</label>
+            <select name="time" id="time"></select>
+            <option value="sport">Sport</option>
+            <option value="santa">santa</option>
+            <option value="nautico">nautico</option>
+            <option value="palmeiras">Palmeiras</option>
+            <option value="gremio">Gremio</option>
+        </select><br><br>
+        <label for="cCid">Escolha a sua cidade na lista</label>
+        <input autocomplete="on" list="cidade" name="tCid" id="cCid" placeholder="cidade">
+        <datalist id="cidade">
+<option value="são paulo"></option>
+<option value="campinas"></option>
+<option value="santos"></option>
+</fieldset>
+<br><br>
+<fieldset>
+    <legend>Idade:</legend>
+        </datalist><br><br>
+        0
+        <input type="range" id="valor_01" name_01>
+        100 +
+        <input type="number" name="Valor_02" id="Valor_02" value="50">
+        =
+        <output name="result" for="Valor_01 Valor_02"></output> 
+        <br><br>
+        <legend><strong>Sua Opnião</strong></legend>
+        <p>Sugestões, elogios e críticas</p>
+        <textarea name="message" rows="10" cols="50" required placeholder="Deixe aqui a sua mensagem!"> </textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </fieldset>
+    </article>
+    <br><br>
+    <hr>
+    <footer>
+        By Alexander&copy;
+    </footer>
+</body>
+</html>
